@@ -1,0 +1,24 @@
+HTTrack3.49-2 launched on Mon, 25 Oct 2021 19:41:45 at http://https://docs.donkeycar.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w http://https://docs.donkeycar.com/ -O "/home/titanv/websites/doc_donkey" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:43:45	Error: 	"Not Found" (404) at link https://docs.donkeycar.com/utility/donkey.html (from https://docs.donkeycar.com/parts/controllers/)
+19:43:45	Error: 	"Not Found" (404) at link https://docs.donkeycar.com/docs/dev_guide/docs (from https://docs.donkeycar.com/contribute/)
+19:43:45	Error: 	"Not Found" (404) at link https://docs.donkeycar.com/guide/create_application.html (from https://docs.donkeycar.com/guide/robot_sbc/setup_raspberry_pi/)
+19:46:05	Warning: 	HTML file (13855 bytes) retransferred due to lack of cache: https://docs.donkeycar.com/.
+19:46:06	Warning: 	HTML file (15444 bytes) retransferred due to lack of cache: https://docs.donkeycar.com/parts/rc/
+19:46:07	Warning: 	HTML file (14301 bytes) retransferred due to lack of cache: https://docs.donkeycar.com/guide/host_pc/setup_ubuntu/
+19:46:08	Warning: 	HTML file (9343 bytes) retransferred due to lack of cache: https://docs.donkeycar.com/utility/donkey.html
+19:46:09	Error: 	"Not Found" (404) at link https://docs.donkeycar.com/utility/donkey.html (from https://docs.donkeycar.com/parts/controllers/)
+19:46:09	Error: 	"Not Found" (404) at link https://docs.donkeycar.com/supported_cars/assets/Latrax.jpg (from https://docs.donkeycar.com/supported_cars/)
+19:46:09	Warning: 	HTML file (9343 bytes) retransferred due to lack of cache: https://docs.donkeycar.com/docs/dev_guide/docs
+19:46:10	Error: 	"Not Found" (404) at link https://docs.donkeycar.com/docs/dev_guide/docs (from https://docs.donkeycar.com/contribute/)
+19:46:10	Warning: 	HTML file (9343 bytes) retransferred due to lack of cache: https://docs.donkeycar.com/guide/create_application.html
+19:46:11	Error: 	"Not Found" (404) at link https://docs.donkeycar.com/guide/create_application.html (from https://docs.donkeycar.com/guide/robot_sbc/setup_raspberry_pi/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 26 seconds : 165 links scanned, 227 files written (130828275 bytes overall) [67061523 bytes received at 252110 bytes/sec], 7255050 bytes transferred using HTTP compression in 78 files, ratio 62%, 3.1 requests per connection
+(7 errors, 6 warnings, 0 messages)

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<!-- Mirrored from docs.donkeycar.com/parts/rc/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Oct 2021 22:46:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>RC control - Donkey Car</title>
+  <link rel="stylesheet" href="../../../fonts.googleapis.com/css732b.css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "RC control";
+    var mkdocs_page_input_path = "parts/rc.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-99215530-2', 'github.io/donkey');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Donkey Car</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="https://docs.donkeycar.com/search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/build_hardware/index.html">Build a car.</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/install_software/index.html">Install the software.</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/create_application/index.html">Create Donkeycar App.</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/calibrate/index.html">Calibrate steering and throttle.</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/get_driving/index.html">Get driving.</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/train_autopilot/index.html">Train an autopilot.</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/dataset_pretrained_models/index.html">Dataset and pre-trained models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/simulator/index.html">Donkey Simulator.</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/virtual_race_league/index.html">Virtual Race League.</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../guide/mobile_app/index.html">Mobile app</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Parts</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about/index.html">About</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../actuators/index.html">Actuators</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../controllers/index.html">Controllers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../odometry/index.html">Odometry/encoders</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../keras/index.html">Keras</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../stores/index.html">Stores</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../imu/index.html">IMU</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../lidar/index.html">Lidar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../oled/index.html">OLED</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../voice_control/index.html">Voice Control</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../stop_sign_detection/index.html">Stop Sign Detection</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Utilities</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../utility/donkey/index.html">donkey</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../utility/ui/index.html">UI</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dev_guide/model/index.html">Create your own model</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../supported_cars/index.html">Supported Cars</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../roll_your_own/index.html">Roll Your Own</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tests/index.html">Tests</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../release/index.html">Releases</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../legacy/index.html">Legacy</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">Donkey Car</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>RC control</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/autorope/donkeydocs/edit/master/docs/parts/rc.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="rc-control">RC control</h1>
+<p>(This only works with the RaspberryPi. The Jetson Nano does not provide the necessary GPIO pin support)</p>
+<p>You can drive Donkey with nothing more than the RC controller your car probably came with! The secret is that, thanks to the cool Pigpio library, the RaspberryPi pins can read and generate the RC signals necessary to read your RC receiver and drive your servo and motor controllers. </p>
+<p>To do this you need to either connect some jumper cables from your RC receiver to the RPi GPIO pins and then do the same for your steering servo and motor controller (it's a little fiddly but works fine) or use our forthcoming Donkeycar RC Hat, which is plug and play and includes other nice stuff like a OLED screen, a fan, encoder support and even an e-stop option (like a remote kill switch) if you happen to have a 3Ch (or more) RC transmitter.</p>
+<p>NOTE: RC control is currently only supported in the Dev branch. To use it, after you git clone donkeycar, do a <code>git checkout dev</code></p>
+<h2 id="hardware-setup">Hardware Setup</h2>
+<p>You can use the GPIO pins for RC input, output or both. In the case of RC input, the RC controller replaces a bluetooth joystick. In the case of RC output, it replaces the I2C servo driver board. </p>
+<p>The easiest way to connect RC is via the custom "hat" that we've designed (see above). But if you're doing it yourself, follow this wiring guide. It's a bit of a forest of jumper cables if you're doing both input and output, but remember that you only have to connect one ground and V+ cable to the RC reciever (on any channel), rather than one for every channel. </p>
+<p>Also note the the RC receiver should be connected to the 3.3v pins, while the output servo and motor controller are connected to the 5v pins.</p>
+<p><strong><em>Warning:</em></strong> The RC receiver PWM signal is generated from the receiver input voltage, so connecting the RC receiver to 5V or even 6V from the ESC will fry the RPi!</p>
+<p><img alt="Donkey RC connections" src="../../assets/rc.png" /></p>
+<p>Here's what the RC receiver connection should look like</p>
+<p><img alt="Donkey RC connections" src="../../assets/rc.jpg" /></p>
+<h2 id="software-setup">Software Setup</h2>
+<p>First, on the command line enter this to set the PIGPIO daemon to always run on startup:</p>
+<pre><code class="language-bash">sudo systemctl enable pigpiod &amp; sudo systemctl start pigpiod
+</code></pre>
+<p>Next, in your <code>mycar</code> directory, edit the myconfig.py files as follows:</p>
+<ul>
+<li>For RC input, select <code>pigpio_rc</code> as your controller type in your myconfig.py file. Uncomment the line (remove the leading <code>#</code>) and edit it as follows:</li>
+</ul>
+<pre><code class="language-python">CONTROLLER_TYPE = 'pigpio_rc'
+</code></pre>
+<p>Also set <code>use joystick</code> to True</p>
+<pre><code class="language-python">USE_JOYSTICK_AS_DEFAULT = True
+</code></pre>
+<ul>
+<li>For RC output, select <code>PIGPIO_PWM</code> as your drive train type in your myconfig.py file. Uncomment the line (remove the leading <code>#</code>) and edit it as follows:</li>
+</ul>
+<pre><code class="language-python">DRIVE_TRAIN_TYPE = &quot;PIGPIO_PWM&quot; # I2C_SERVO|DC_STEER_THROTTLE|DC_TWO_WHEEL|DC_TWO_WHEEL_L298N|SERVO_HBRIDGE_PWM|PIGPIO_PWM|MM1|MOCK
+</code></pre>
+<p>For both of these, there are additional settings you can change, such as reversing the direction of output or the pins connected: </p>
+<p>Input options:</p>
+<pre><code class="language-python">#PIGPIO RC control
+STEERING_RC_GPIO = 26
+THROTTLE_RC_GPIO = 20
+DATA_WIPER_RC_GPIO = 19
+PIGPIO_STEERING_MID = 1500         # Adjust this value if your car cannot run in a straight line
+PIGPIO_MAX_FORWARD = 2000          # Max throttle to go fowrward. The bigger the faster
+PIGPIO_STOPPED_PWM = 1500
+PIGPIO_MAX_REVERSE = 1000          # Max throttle to go reverse. The smaller the faster
+PIGPIO_SHOW_STEERING_VALUE = False
+PIGPIO_INVERT = False
+PIGPIO_JITTER = 0.025   # threshold below which no signal is reported
+</code></pre>
+<p>Output options:</p>
+<pre><code class="language-python">#STEERING FOR PIGPIO_PWM OUTPUT
+STEERING_PWM_PIN = 13           #Pin numbering according to Broadcom numbers
+STEERING_PWM_FREQ = 50          #Frequency for PWM
+STEERING_PWM_INVERTED = False   #If PWM needs to be inverted
+
+#THROTTLE FOR PIGPIO_PWM OUTPUT
+THROTTLE_PWM_PIN = 18           #Pin numbering according to Broadcom numbers
+THROTTLE_PWM_FREQ = 50          #Frequency for PWM
+THROTTLE_PWM_INVERTED = False   #If PWM needs to be inverted
+</code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If one channel is reversed (steering left goes right, etc), either reverse that channel on your RC transmitter (that's usually a switch or setting) or change it in the output options shown above by channging the PWM_INVERTED value for that channel to <code>True</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/autorope/donkeydocs/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../../index.html';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+
+<!-- Mirrored from docs.donkeycar.com/parts/rc/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Oct 2021 22:46:07 GMT -->
+</html>
